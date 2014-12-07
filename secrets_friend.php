@@ -12,7 +12,7 @@ if ($token != NULL && $token != "") {
 	$status->msg = "add secret ok";
 	// Secrets
 	$secret = new Secret ();
-	$secret->id = 123123;
+	$secret->id = "123123aaa";
 	$secret->content = "朋友---并不是所有的秘密都叫变秘!";
 	$secret->image_url = "http://bianmi.qiniudn.com/test.jpg";
 	$secret->audio_url = "http://bianmi.qiniudn.com/secret/audio/89a9a9b5c7044e14b60a868f30e460c9_1412348604306.amr?attname=";
@@ -21,8 +21,20 @@ if ($token != NULL && $token != "") {
 	$secret->likes = 22;
 	$secret->from = "朋友的朋友";
 	$secret->creat_time = 1234123;
+	
+	$secret1 = new Secret ();
+	$secret1->id = "123123asdfasdfasdf";
+	$secret1->content = "朋友圈---并不是所有的秘密都叫变秘!";
+	$secret1->image_url = "http://bianmi.qiniudn.com/test.jpg";
+	$secret1->audio_url = "http://bianmi.qiniudn.com/secret/audio/89a9a9b5c7044e14b60a868f30e460c9_1412348604306.amr?attname=";
+	$secret1->audio_length = 60;
+	$secret1->comments = 3423;
+	$secret1->likes = 22;
+	$secret1->from = "朋友的朋友";
+	$secret1->creat_time = 1234123;
+	
 	$secrets = array (
-			0 => $secret,
+			0 => $secret1,
 			1 => $secret,
 			2 => $secret,
 			3 => $secret 
