@@ -12,7 +12,7 @@ if ($batch != NULL) {
 	$secret = new Secret ();
 	$secret->id = 123123;
 	$secret->content = "热门---并不是所有的秘密都叫变秘!";
-	$secret->image_url = "http://bianmi.qiniudn.com/secret/image/3670996646360963567.jpg?attname=";
+	$secret->image_url = "http://bianmi.qiniudn.com/20141208185154.jpg";
 	$secret->audio_url = "http://bianmi.qiniudn.com/secret/audio/89a9a9b5c7044e14b60a868f30e460c9_1412348604306.amr?attname=";
 	$secret->audio_length = 60;
 	$secret->comments = 3423;

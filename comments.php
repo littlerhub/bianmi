@@ -20,7 +20,7 @@ if ($lastid == "") {
 	$comment->audio_length = 30;
 	$comment->likes = 22;
 	$comment->isliked = true;
-	$comment->created_time = 12234123123;
+	$comment->created_time = 1418028973123;
 	$comments = array (
 			0 => $comment,
 			1 => $comment,
@@ -49,13 +49,13 @@ if ($lastid == "") {
 	$comment = new Comment ();
 	$comment->id = "123123xcvxcv";
 	$comment->userid = "asdasdasdq212312";
-	$comment->content = "评论内容评论内容";
-	$comment->avatar_url = "http://bianmi.qiniudn.com/avatar/rBACE1LjJWCTlIPaAAAX8ll_0uI754_200x200_3.jpg";
+	$comment->content = "评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容";
+	$comment->avatar_url = "http://bianmi.qiniudn.com/2012100413195471481.jpg";
 	$comment->audio_url = "http://bianmi.qiniudn.com/comment/audio/89a9a9b5c7044e14b60a868f30e460c9_1412348604306.amr?attname=";
 	$comment->audio_length = 30;
 	$comment->likes = 22;
 	$comment->isliked = true;
-	$comment->created_time = 12234123123;
+	$comment->created_time = 1418029449527;
 	$comments = array (
 			0 => $comment,
 			1 => $comment,
