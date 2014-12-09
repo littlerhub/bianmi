@@ -1,28 +1,30 @@
 <?php
 $userid = $_POST ['userid'];
+$token = $_POST ['token'];
 $content = $_POST ['content'];
 $imageUrl = $_POST ['image_url'];
 $audioUrl = $_POST ['audio_url'];
+$audioLength = $_POST ['audio_length'];
 $longitude = $_POST ['longitude'];
 $latitude = $_POST ['latitude'];
-$createAt = $_POST ['created_time'];
+$city = $_POST ['city'];
 
 $status = new Status ();
 
-if ($content != NULL && $content != "") {
+if ($userid != "" && $token != "") {
 	$status->code = "200";
-	$status->msg = "add secret ok" . "longtitude->" . $longitude . "    latitude->" . $latitude;
+	$status->msg = "发表成功!";
 	echo json_encode ( array (
 			"status" => $status 
 	) );
 } else {
 	$status->code = "400";
-	$status->msg = "add secret error";
+	$status->msg = "发表失败！";
 	echo json_encode ( array (
 			"status" => $status 
 	) );
 }
-// echo json_encode(array("user"=>$userid, "content"=>$content, "imageUrl"=>$imageUrl, "audioUrl"=>$audioUrl, "createAt"=>$createAt));
+
 class Status {
 	public $code;
 	public $msg;
