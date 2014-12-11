@@ -15,7 +15,7 @@ if ($userid != "" && $token != "" && $lastid == "") {
 	$person_reminder->id = "123123";
 	$person_reminder->secretid = "123123";
 	$person_reminder->title = "我是标题";
-	$person_reminder->content = "我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容";
+	$person_reminder->content = "我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容";
 	$person_reminder->likes = "123";
 	$person_reminder->comments = "211";
 	$person_reminder->image_url = "http://bianmi.qiniudn.com/20141208185154.jpg";

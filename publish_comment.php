@@ -1,23 +1,25 @@
 <?php
 
-$secretid = $_POST['secretid'];
 $userid = $_POST['userid'];
+$token = $_POST['token'];
 $content = $_POST['content'];
+$secretid = $_POST['secretid'];
 $audioUrl = $_POST['audio_url'];
-$createAt = $_POST['created_time'];
+$audioLength = $_POST['audio_length'];
+
 
 $status = new Status();
 
-if($content != NULL && $content != "123"){
+if($userid != "" && $token != ""){
 	$status->code = "200";
-	$status->msg = "add secret ok";
+	$status->msg = "publish comment ok";
 	echo json_encode(array("status"=>$status));
 }else{
 	$status->code = "400";
-	$status->msg = "add secret error";
+	$status->msg = "publish comment error";
 	echo json_encode(array("status"=>$status));
 }
-//echo json_encode(array("user"=>$userid, "content"=>$content, "imageUrl"=>$imageUrl, "audioUrl"=>$audioUrl, "createAt"=>$createAt));
+
 class Status{
 	public $code;
 	public $msg;

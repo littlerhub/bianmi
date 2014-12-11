@@ -13,9 +13,9 @@ if ($token != NULL && $token != "") {
 	// Secrets
 	$secret = new Secret ();
 	$secret->id = "123123aaa";
-	$secret->content = "朋友---并不是所有的秘密都叫变秘!";
+	$secret->content = "朋友---并不是所有的秘密都叫变秘!date";
 	$secret->image_url = "http://bianmi.qiniudn.com/20141208185154.jpg";
-	$secret->audio_url = "http://bianmi.qiniudn.com/secret/audio/89a9a9b5c7044e14b60a868f30e460c9_1412348604306.amr?attname=";
+	$secret->audio_url = "http://bianmi.qiniudn.com/user/audio/41e021e98da4474a84879f54cbeb7721_1418278191016.amr";
 	$secret->audio_length = 60;
 	$secret->comments = 3423;
 	$secret->likes = 22;
@@ -26,7 +26,7 @@ if ($token != NULL && $token != "") {
 	$secret1->id = "123123asdfasdfasdf";
 	$secret1->content = "朋友圈---并不是所有的秘密都叫变秘!";
 	$secret1->image_url = "http://bianmi.qiniudn.com/test.jpg";
-	$secret1->audio_url = "http://bianmi.qiniudn.com/secret/audio/89a9a9b5c7044e14b60a868f30e460c9_1412348604306.amr?attname=";
+	$secret1->audio_url = "http://bianmi.qiniudn.com/user/audio/41e021e98da4474a84879f54cbeb7721_1418278191016.amr";
 	$secret1->audio_length = 60;
 	$secret1->comments = 3423;
 	$secret1->likes = 22;
