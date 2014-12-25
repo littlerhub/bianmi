@@ -1,7 +1,12 @@
 <?php
+session_start(); 
+
 // 接收参数
 $phone = $_GET ['phone_md5'];
 $pwdmd5 = $_GET ['pwd_md5'];
+
+$sessionid=session_id(); 
+
 
 // 状态码对象
 $status = new Status ( );
@@ -13,7 +18,7 @@ $json = null;
 if ($phone != "" && $pwdmd5 != "") {
 	// 返回Status对象
 	$status->code = "200";
-	$status->msg = "signin ok";
+	$status->msg = "signin ok".$sessionid;
 	// 返回User对象
 	$user->userid = md5 ( $phone + 1 );
 	$user->token = md5 ( $phone +  $phone);

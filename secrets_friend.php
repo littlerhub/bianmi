@@ -4,6 +4,8 @@ $token = $_GET ['token'];
 $secretid = $_GET ['lastid'];
 $batch = $_GET ['batch'];
 
+$sessionid=session_id();
+
 $status = new Status ();
 
 if ($token != NULL && $token != "") {
@@ -13,7 +15,7 @@ if ($token != NULL && $token != "") {
 	// Secrets
 	$secret = new Secret ();
 	$secret->id = "123123aaa";
-	$secret->content = "朋友---并不是所有的秘密都叫变秘!date";
+	$secret->content = "有个未婚朋友，回老家挽着她爸逛街，路过一个酒店门口广场的婚礼拱门，穿过后她爸忽然说：咱们再走一次吧，等你结婚我怕我走不动了。朋友当场泪崩然后火速结婚一切尘埃落定结束后，她才得知拱门一事是全家人策划，就为了她赶紧结婚。。。";
 	$secret->image_url = "http://bianmi.qiniudn.com/20141208185154.jpg";
 	$secret->audio_url = "http://bianmi.qiniudn.com/user/audio/41e021e98da4474a84879f54cbeb7721_1418278191016.amr";
 	$secret->audio_length = 60;
@@ -24,7 +26,7 @@ if ($token != NULL && $token != "") {
 	
 	$secret1 = new Secret ();
 	$secret1->id = "123123asdfasdfasdf";
-	$secret1->content = "朋友圈---并不是所有的秘密都叫变秘!";
+	$secret1->content = "有个未婚朋友，回老家挽着她爸逛街，路过一个酒店门口广场的婚礼拱门，穿过后她爸忽然说：咱们再走一次吧，等你结婚我怕我走不动了。朋友当场泪崩然后火速结婚一切尘埃落定结束后，她才得知拱门一事是全家人策划，就为了她赶紧结婚。。。";
 	$secret1->image_url = "http://bianmi.qiniudn.com/test.jpg";
 	$secret1->audio_url = "http://bianmi.qiniudn.com/user/audio/41e021e98da4474a84879f54cbeb7721_1418278191016.amr";
 	$secret1->audio_length = 60;
